@@ -49,10 +49,11 @@ FROM recent_titles
 GROUP BY title;
 ```
 
-The following table is the result from the above code. After this process, we have a better idea of which positions will need to be replaced in the near future.
+The following table is the result from the above code. Among the 33,118 candidate retirees, the majorities were "Senior Engineer" or "Senior Staff". After this process, we have a better idea of which positions will need to be replaced in the near future. Possibly, some promotions can help fill the "Senior" titled roles, in addition to new hires. 
+
 -![title](title.png)
 
-Finally, we were asked to generate a list of mentor candidates. The criteria was current employees that were born in 1965. For this, the following code was used for query.
+Finally, we were asked to generate a list of mentor candidates. The criteria was current employees that were born in 1965. For this, the following code was used for query. 
 
 ```SQL
 -- Generate mentor list 
@@ -66,9 +67,13 @@ AND (ti.to_date = '9999-01-01');
 ```
 
 And here is the list of mentor candidates. 
+
 -![mentor](mentor.jpg)
 
+The list contains 1549 mentor candidates that were born in 1965. 
 
+Assuming not all of mentor candidates can be promoted, we can possibly do some further analysis to prioritize the list. As the majority of the employees eligible for retirement are "Senior Engineer" or "Senior Staff", we can further filter the mentor list to narrow down the list specific to the titles "Engineer" and/or "Staff". Among them, employees with good performance can be the ones to be promoted to senior roles. 
 
+Altogether, we show a series of analysis in this project to find retirement candidates and info on the titles of those candidates to get a guidance in future promotion or new hires happening in the company. Through the last analysis, we find candidates ready to be promoted to senior roles. Using this list with the title info from the previous analysis, the company will have a better sense of whom to promote for senior/mentorship roles. 
 
     
