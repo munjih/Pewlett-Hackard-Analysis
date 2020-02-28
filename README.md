@@ -68,7 +68,7 @@ AND (ti.to_date = '9999-01-01');
 
 And here is the list of mentor candidates. 
 
--![mentor](mentor.jpg)
+-![mentor](mentor.png)
 
 The list contains 1549 mentor candidates that were born in 1965. 
 
